@@ -1,4 +1,4 @@
-# Signal Processing (DS) project 2: Computing a spectrogram manually
+# Signal Processing (SP) project 2: Computing a spectrogram manually
 
 # Credit
 The dataset and proposal of the exercise is from the Udemy course [Signal Processing Problems, solved in Matlab and in Python](https://www.udemy.com/course/signal-processing/). I highly recommend this course for those interested in signal processing.
