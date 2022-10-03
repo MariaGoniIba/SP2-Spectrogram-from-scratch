@@ -1,7 +1,7 @@
-# Signal Processing (DS) project 2: Computing an spectrogram manually
+# Signal Processing (DS) project 2: Computing a spectrogram manually
 
 # Credit
-The dataset and proposal of the exercise is from the Udemy course [Signal Processing Problems, solved in Matlab and in Python](https://www.udemy.com/course/signal-processing/). I highly recommend this course for those learning signal processing.
+The dataset and proposal of the exercise is from the Udemy course [Signal Processing Problems, solved in Matlab and in Python](https://www.udemy.com/course/signal-processing/). I highly recommend this course for those interested in signal processing.
 
 # Why spectrogram? Brief theory 
 When applying the FFT to the entire signal, the signal is treated as if it were static.
@@ -11,21 +11,21 @@ With Welch’s method, we cut the signal in windows and apply the FFT in each wi
 This method increases the signal to noise ratio compared with the FFT. If the features of the signal are the same over time, then both results with the FFT and the Welch's method will be the same. 
 
 However, in some signals those changes over time are the ones you want to investigate. Therefore, Welch's method is not good since it averages all the individual window's together. 
-An alternative to understand how spectral features change over time is to compute a time-frequency analysis, also knows as spectrogram.
+An alternative to understand how spectral features change over time is to compute a time-frequency analysis, also known as spectrogram.
 
 # Proposal
 The goal of the exercise is to compute manually (no spectrogram function) the spectrogram of the following chirp.
 <p align="center">
-    <img width="400" src="https:/originalsignal">
+    <img width="400" src="https://github.com/MariaGoniIba/SP2-Spectrogram-from-scratch/blob/main/OriginalSignal.png">
 </p>
 
 # Solution
 I cut the signal into 500ms non-overlapping windows. 
-As explained, with Welch's method you would compute each window separetely and then average them altogether. 
-Intead in the spectrogram, I will compute each window and arrange them in a matrix for the final plot. 
+As explained, with Welch's method you would compute each window separately and then average them altogether. 
+Instead in the spectrogram, I will compute each window and arrange them in a matrix for the final plot. 
 
 <p align="center">
-    <img width="400" src="https:/finalplot">
+    <img width="400" src="https://github.com/MariaGoniIba/SP2-Spectrogram-from-scratch/blob/main/Spectrogram.png">
 </p>
 
 This kind of plot helps to understand how the spectrum of the signal changes over time. 
